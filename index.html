@@ -102,224 +102,224 @@
       </div>
     </div>
   </div>
+  <div id="content">
+    <audio id="clickSound" src="click.mp3"></audio>
+    <audio id="clickButton" src="click_button.mp3"></audio>
+    <div id="snow_animate" class="snowflakes"></div>
+    <div class="wrapper">
+      <div class="name">БРАИЛА КВАРТИРА</div>
+      <div class="update_app" id="update_app">
+        <div class="text_update">Доступно обновление</div>
+        <div class="but_update"></div>
+      </div>
+      <div class="current_dt">
+        <div class="dt_text">Сегодня:</div>
+        <div class="current_d" id="date">мм/дд/гггг</div>
+        <div class="text_t">Время:</div>
+        <div class="current_t" id="time">00:00:00</div>
+      </div>
 
-  <audio id="clickSound" src="click.mp3"></audio>
-  <audio id="clickButton" src="click_button.mp3"></audio>
-  <div id="snow_animate" class="snowflakes"></div>
-  <div class="wrapper">
-    <div class="name">БРАИЛА КВАРТИРА</div>
-    <div class="update_app" id="update_app">
-      <div class="text_update">Доступно обновление</div>
-      <div class="but_update"></div>
-    </div>
-    <div class="current_dt">
-      <div class="dt_text">Сегодня:</div>
-      <div class="current_d" id="date">мм/дд/гггг</div>
-      <div class="text_t">Время:</div>
-      <div class="current_t" id="time">00:00:00</div>
-    </div>
-
-    <div id="mySidenav" class="sidenav">
-      <a class="closebtn" onclick="closeNav()">⬅</a>
-      <div class="but_nav">НАСТРОЙКИ</div>
-      <div class="name_description">Установка температуры</div>
-      <div class="set_form">
-        <div class="number-control">
-          <button class="but_setpoint minus" onclick="decrement()"><span>-</span></button>
-          <input type="number" id="set_now" size="2" min="17" max="30" step="0.2" class="set_fild" name="setpoint"
-            value="17" required>
-          <button class="but_setpoint plus" onclick="increment()"><span>+</span></button>
+      <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">⬅</a>
+        <div class="but_nav">НАСТРОЙКИ</div>
+        <div class="name_description">Установка температуры</div>
+        <div class="set_form">
+          <div class="number-control">
+            <button class="but_setpoint minus" onclick="decrement()"><span>-</span></button>
+            <input type="number" id="set_now" size="2" min="17" max="30" step="0.2" class="set_fild" name="setpoint"
+              value="17" required>
+            <button class="but_setpoint plus" onclick="increment()"><span>+</span></button>
+          </div>
+          <input type="button" id="save_but" class="set_but" value="Сохранить">
         </div>
-        <input type="button" id="save_but" class="set_but" value="Сохранить">
-      </div>
 
-      <div class="name_description">Установка гистерезиса</div>
-      <div class="set_form">
-        <div class="number-control">
-          <button class="but_setpoint minus" onclick="decr_hyst()"><span>-</span></button>
-          <input type="number" id="set_hyst" size="2" min="0" max="3" step="0.1" class="set_fild" name="hysteresis"
-            value="0" required>
-          <button class="but_setpoint plus" onclick="incr_hyst()"><span>+</span></button>
+        <div class="name_description">Установка гистерезиса</div>
+        <div class="set_form">
+          <div class="number-control">
+            <button class="but_setpoint minus" onclick="decr_hyst()"><span>-</span></button>
+            <input type="number" id="set_hyst" size="2" min="0" max="3" step="0.1" class="set_fild" name="hysteresis"
+              value="0" required>
+            <button class="but_setpoint plus" onclick="incr_hyst()"><span>+</span></button>
+          </div>
+          <input type="button" id="save_hyst" class="set_but" value="Сохранить">
         </div>
-        <input type="button" id="save_hyst" class="set_but" value="Сохранить">
-      </div>
 
 
-      <div class="name_description">Выбор датчика</div>
-      <table class="table" cellspacing="10" border="0">
-        <tr>
-          <th class="column-1" id="nameswt1">Средняя</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="dev_temp">
-            <label for="dev_temp"></label>
-          </td>
-        </tr>
-        <tr>
-          <th class="column-1" id="namesecur1">Спальня</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="living_temp">
-            <label for="living_temp"></label>
-          </td>
-        </tr>
-        <tr>
-          <th class="column-1" id="namesecur1">Настя</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="bedroom_temp">
-            <label for="bedroom_temp"></label>
-          </td>
-        </tr>
-        <tr>
-          <th class="column-1" id="namesecur1">Кухня</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="kitchen_temp">
-            <label for="kitchen_temp"></label>
-          </td>
-        </tr>
-      </table>
+        <div class="name_description">Выбор датчика</div>
+        <table class="table" cellspacing="10" border="0">
+          <tr>
+            <th class="column-1" id="nameswt1">Средняя</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="dev_temp">
+              <label for="dev_temp"></label>
+            </td>
+          </tr>
+          <tr>
+            <th class="column-1" id="namesecur1">Спальня</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="living_temp">
+              <label for="living_temp"></label>
+            </td>
+          </tr>
+          <tr>
+            <th class="column-1" id="namesecur1">Настя</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="bedroom_temp">
+              <label for="bedroom_temp"></label>
+            </td>
+          </tr>
+          <tr>
+            <th class="column-1" id="namesecur1">Кухня</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="kitchen_temp">
+              <label for="kitchen_temp"></label>
+            </td>
+          </tr>
+        </table>
 
-      <div class="set_form"></div>
-      <div class="sound_voice">
-        <div class="snd_txt">Оповещение</div>
-        <div class="sound_animation">
-          <div class="snd_txt">Голос</div>
-          <img class="sound_picture" id="sound_icon" src="Sound_on.png" alt="sound">
+        <div class="set_form"></div>
+        <div class="sound_voice">
+          <div class="snd_txt">Оповещение</div>
+          <div class="sound_animation">
+            <div class="snd_txt">Голос</div>
+            <img class="sound_picture" id="sound_icon" src="Sound_on.png" alt="sound">
+          </div>
+          <div class="sound_animation">
+            <div class="snd_txt">Звуки</div>
+            <img class="sound_picture" id="tick_icon" src="Sound_on.png" alt="sound">
+          </div>
         </div>
-        <div class="sound_animation">
-          <div class="snd_txt">Звуки</div>
-          <img class="sound_picture" id="tick_icon" src="Sound_on.png" alt="sound">
+        <div id="infoContainer"></div>
+      </div>
+
+      <span class="menu_top_but" onclick="openNav()">&#9776;</span>
+      <div class="snow_animation" id="snow" onclick="togglesnow()">
+        <img class="animsnow_picture" id="anim_icon" src="snowflake.png" alt="snowflake">
+      </div>
+      <img class="mic_picture" id="mic_icon" src="mic_off.png" alt="mic"></img>
+
+      <div class="progress">
+        <h1 class="main_text">Газовый Котел</h1>
+        <div class="signal_wifi">
+          <p class="wifi_signal">Статус WI-FI:</p>
+          <div class="wifi_value_on" id="boiler_wifi_value">---</div>
+          <div class="wifi_on" id="boiler_wifi_status"></div>
+        </div>
+        <div class="boiler_name">
+          <p class="boiler_temp">Температура на улице: <span id="outside_temp" class="tempheater_color">---</span>
+            &deg;C
+          </p>
+          <p class="home_temp">Средняя темп в доме: <span id="devhome_temp" class="tempheater_color">---</span> &deg;C
+          </p>
+          <p class="boiler_temp">Состояние Котла: <span id="boiler_stat" class="boiler_status">---</span></p>
         </div>
       </div>
-      <div id="infoContainer"></div>
-    </div>
 
-    <span class="menu_top_but" onclick="openNav()">&#9776;</span>
-    <div class="snow_animation" id="snow" onclick="togglesnow()">
-      <img class="animsnow_picture" id="anim_icon" src="snowflake.png" alt="snowflake">
-    </div>
-    <img class="mic_picture" id="mic_icon" src="mic_off.png" alt="mic"></img>
+      <div class="progress">
+        <h1 class="main_text">НАША <span id="heart">♡</span> СПАЛЬНЯ</h1>
+        <div class="signal_wifi">
+          <p class="wifi_signal">Статус WI-FI:</p>
+          <div class="wifi_value_on" id="leaving_wifi_value">---</div>
+          <div class="wifi_on" id="leaving_wifi_status"></div>
+        </div>
+        <div>
+          <p class="temperature">Температура: <span id="tempC_1" class="temp_color">---</span> &deg;C</p>
+        </div>
+        <table class="table" cellspacing="10" border="0">
+          <tr>
+            <th class="column-1" id="nameswt1">Лампа</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="relay1">
+              <label for="relay1"></label>
+            </td>
+            <td class="column-4">
+              <div class="lamp_off" id="lamp_leavroom"></div>
+            </td>
+          </tr>
+          <tr>
+            <th class="column-1" id="namesecur1">Охрана</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="secur1">
+              <label for="secur1"></label>
+            </td>
+            <td class="column-3">
+              <input type="checkbox" class="LevelPinGreen" id="now_secur1" checked="checked">
+              <label for="now_secur1"></label>
+            </td>
+          </tr>
+        </table>
+      </div>
 
-    <div class="progress">
-      <h1 class="main_text">Газовый Котел</h1>
-      <div class="signal_wifi">
-        <p class="wifi_signal">Статус WI-FI:</p>
-        <div class="wifi_value_on" id="boiler_wifi_value">---</div>
-        <div class="wifi_on" id="boiler_wifi_status"></div>
+      <div class="progress">
+        <h1 class="main_text">СПАЛЬНЯ ДОЦЯ</h1>
+        <div class="signal_wifi">
+          <p class="wifi_signal">Статус WI-FI:</p>
+          <div class="wifi_value_on" id="bedroom_wifi_value">---</div>
+          <div class="wifi_on" id="bedroom_wifi_status"></div>
+        </div>
+        <div>
+          <p class="temperature">Температура: <span id="tempC_2" class="temp_color">---</span> &deg;C</p>
+        </div>
+        <table class="table" cellspacing="10" border="0">
+          <tr>
+            <th class="column-1" id="nameswt2">Лампа</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="relay2">
+              <label for="relay2"></label>
+            </td>
+            <td class="column-4">
+              <div class="lamp_off" id="lamp_bedroom"></div>
+            </td>
+          </tr>
+          <tr>
+            <th class="column-1" id="namesecur2">Охрана</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="secur2">
+              <label for="secur2"></label>
+            </td>
+            <td class="column-3">
+              <input type="checkbox" class="LevelPinGreen" id="now_secur2" checked="checked">
+              <label for="now_secur2"></label>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="boiler_name">
-        <p class="boiler_temp">Температура на улице: <span id="outside_temp" class="tempheater_color">---</span>
-          &deg;C
-        </p>
-        <p class="home_temp">Средняя темп в доме: <span id="devhome_temp" class="tempheater_color">---</span> &deg;C
-        </p>
-        <p class="boiler_temp">Состояние Котла: <span id="boiler_stat" class="boiler_status">---</span></p>
+
+      <div class="progress">
+        <h1 class="main_text">КУХНЯ ГОСТИННАЯ</h1>
+        <div class="signal_wifi">
+          <p class="wifi_signal">Статус WI-FI:</p>
+          <div class="wifi_value_on" id="kitchen_wifi_value">---</div>
+          <div class="wifi_on" id="kitchen_wifi_status"></div>
+        </div>
+        <div>
+          <p class="temperature">Температура: <span id="tempC_3" class="temp_color">---</span> &deg;C</p>
+        </div>
+        <table class="table" cellspacing="10" border="0">
+          <tr>
+            <th class="column-1" id="nameswt3">Лампа</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="relay3">
+              <label for="relay3"></label>
+            </td>
+            <td class="column-4">
+              <div class="lamp_off" id="lamp_kitchen"></div>
+            </td>
+          </tr>
+          <tr>
+            <th class="column-1" id="namesecur3">Охрана</th>
+            <td class="column-2">
+              <input type="checkbox" class="checkboxGreen" id="secur3">
+              <label for="secur3"></label>
+            </td>
+            <td class="column-3">
+              <input type="checkbox" class="LevelPinGreen" id="now_secur3" checked="checked">
+              <label for="now_secur3"></label>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
-
-    <div class="progress">
-      <h1 class="main_text">НАША <span id="heart">♡</span> СПАЛЬНЯ</h1>
-      <div class="signal_wifi">
-        <p class="wifi_signal">Статус WI-FI:</p>
-        <div class="wifi_value_on" id="leaving_wifi_value">---</div>
-        <div class="wifi_on" id="leaving_wifi_status"></div>
-      </div>
-      <div>
-        <p class="temperature">Температура: <span id="tempC_1" class="temp_color">---</span> &deg;C</p>
-      </div>
-      <table class="table" cellspacing="10" border="0">
-        <tr>
-          <th class="column-1" id="nameswt1">Лампа</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="relay1">
-            <label for="relay1"></label>
-          </td>
-          <td class="column-4">
-            <div class="lamp_off" id="lamp_leavroom"></div>
-          </td>
-        </tr>
-        <tr>
-          <th class="column-1" id="namesecur1">Охрана</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="secur1">
-            <label for="secur1"></label>
-          </td>
-          <td class="column-3">
-            <input type="checkbox" class="LevelPinGreen" id="now_secur1" checked="checked">
-            <label for="now_secur1"></label>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="progress">
-      <h1 class="main_text">СПАЛЬНЯ ДОЦЯ</h1>
-      <div class="signal_wifi">
-        <p class="wifi_signal">Статус WI-FI:</p>
-        <div class="wifi_value_on" id="bedroom_wifi_value">---</div>
-        <div class="wifi_on" id="bedroom_wifi_status"></div>
-      </div>
-      <div>
-        <p class="temperature">Температура: <span id="tempC_2" class="temp_color">---</span> &deg;C</p>
-      </div>
-      <table class="table" cellspacing="10" border="0">
-        <tr>
-          <th class="column-1" id="nameswt2">Лампа</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="relay2">
-            <label for="relay2"></label>
-          </td>
-          <td class="column-4">
-            <div class="lamp_off" id="lamp_bedroom"></div>
-          </td>
-        </tr>
-        <tr>
-          <th class="column-1" id="namesecur2">Охрана</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="secur2">
-            <label for="secur2"></label>
-          </td>
-          <td class="column-3">
-            <input type="checkbox" class="LevelPinGreen" id="now_secur2" checked="checked">
-            <label for="now_secur2"></label>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="progress">
-      <h1 class="main_text">КУХНЯ ГОСТИННАЯ</h1>
-      <div class="signal_wifi">
-        <p class="wifi_signal">Статус WI-FI:</p>
-        <div class="wifi_value_on" id="kitchen_wifi_value">---</div>
-        <div class="wifi_on" id="kitchen_wifi_status"></div>
-      </div>
-      <div>
-        <p class="temperature">Температура: <span id="tempC_3" class="temp_color">---</span> &deg;C</p>
-      </div>
-      <table class="table" cellspacing="10" border="0">
-        <tr>
-          <th class="column-1" id="nameswt3">Лампа</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="relay3">
-            <label for="relay3"></label>
-          </td>
-          <td class="column-4">
-            <div class="lamp_off" id="lamp_kitchen"></div>
-          </td>
-        </tr>
-        <tr>
-          <th class="column-1" id="namesecur3">Охрана</th>
-          <td class="column-2">
-            <input type="checkbox" class="checkboxGreen" id="secur3">
-            <label for="secur3"></label>
-          </td>
-          <td class="column-3">
-            <input type="checkbox" class="LevelPinGreen" id="now_secur3" checked="checked">
-            <label for="now_secur3"></label>
-          </td>
-        </tr>
-      </table>
-    </div>
-
   </div>
   <script src="app.js" defer></script>
   <script>
