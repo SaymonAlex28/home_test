@@ -50,11 +50,7 @@ let utterance = null;
 var tick_sound = true;
 var sound_voice = true;
 let menuAutoCloseTimer = null;
-// let voice_on = false;
 
-// setTimeout(() => {
-//   voice_on = true;
-// }, 8000);
 
 function speak(text) {
   if (!sound_voice) return;
